@@ -1,6 +1,6 @@
 .history {
   position: relative;
-
+  @include section-padding-bottom;
   
 }
 .history-bg {
@@ -27,6 +27,11 @@
 		&__text {
       flex: 1 1 50%;
       padding-right: 70px;
+
+      @media (max-width: $mobile) {
+        padding-right: 0;
+        // flex: 1 1 100%;
+      }
 		}
 
 		// .history-item__year
