@@ -1,0 +1,11 @@
+.breadcrumbs {
+  margin-top: 70px;
+  padding: 20px 0;
+  // background-color: $bgColor;
+
+  // .breadcrumbs__container
+  &__container {
+    display: flex;
+    gap: 5px;
+  }
+}

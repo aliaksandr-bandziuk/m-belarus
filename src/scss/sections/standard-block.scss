@@ -1,0 +1,42 @@
+.standard-block {
+  @include section-padding-bottom;
+
+  &__wrapper {
+    max-width: 700px;
+  }
+
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 25px;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+
+.numbers-item {
+}
+.number-number {
+}
+.number-text {
+  font-size: 18px;
+  line-height: 120%;
+  color: $brandSubcolor;
+
+  span {
+    font-size: 30px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+}
+.number-big {
+}
+.numbers-descr {
+}
+

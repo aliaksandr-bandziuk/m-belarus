@@ -1,0 +1,169 @@
+.subscribe {
+  @include section-padding-bottom;
+
+}
+
+.subscribe-wrapper {
+  background-color: $brandSubcolor;
+  padding: 45px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.subscribe-block {
+  max-width: 55%;
+
+  @media (max-width: $mobile) {
+    max-width: 100%;
+  }
+
+  // .subscribe-block__content
+  &__content {
+  }
+}
+
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  input {
+    outline: none;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #bebebe;
+    
+    &::placeholder {
+      font-size: 18px;
+      font-weight: 500;
+      color: #bebebe;
+    }
+  }
+
+  // .subscribe-form__nae
+  &__name {
+    // flex: 0 1 250px;
+    height: 40px;
+  }
+
+  // .subscribe-form__email
+  &__email {
+    // flex: 0 1 250px;
+    height: 40px;
+  }
+
+  // .subscribe-form__btn
+  &__btn {
+    // flex: 0 1 60px;
+    height: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+
+
+  }
+}
+
+.subscribe-btn {
+  position: relative;
+  background-color: transparent;
+  color: #e8e8e8;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.subscribe-btn::before {
+  content: "Падпісацца";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-color: #333;
+  transform: translate(0%,99%);
+  z-index: 99;
+  position: relative;
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.subscribe-btn::after {
+  content: "Падпісацца";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform-origin: top;
+  transform: translate(0%,-100%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.subscribe-btn:hover::before {
+  transform: translate(0%,0%);
+}
+
+.subscribe-btn:hover::after {
+  transform: translate(0%,-200%);
+}
+
+.subscribe-btn:focus {
+  outline: none;
+}
+
+.subscribe-btn:active {
+  scale: 0.95;
+}
+
+.subscribe-decoration {
+  // background-color: #ffc540;
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 50%;
+
+  @media (max-width: 1100px) {
+    width: 450px;
+  }
+  @media (max-width: 1000px) {
+    width: 400px;
+  }
+  @media (max-width: 1100px) {
+    width: 350px;
+  }
+  @media (max-width: $mobile) {
+    display: none;
+  }
+
+  .form-img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+}
