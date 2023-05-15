@@ -1,8 +1,8 @@
 var slider = new Swiper(".gallery-slider", {
   slidesPerView: 1,
-  loopedSlides: 6,
-  noSwiping: true,
-  noSwipingClass: "swiper-slide",
+  // loopedSlides: 6,
+  // noSwiping: true,
+  // noSwipingClass: "swiper-slide",
   pagination: {
     el: ".swiper-pagination",
     clickable: true

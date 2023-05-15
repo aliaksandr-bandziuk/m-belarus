@@ -107,6 +107,10 @@
     bottom: -0.313rem;
     text-align: left;
 
+    @media (max-width: $mobile) {
+      display: none;
+    }
+
     &-bullet {
       border-radius: 0;
       width: 1.125rem;
