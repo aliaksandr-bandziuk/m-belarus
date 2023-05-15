@@ -1270,6 +1270,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .history {
   position: relative;
+  padding-top: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+  padding-bottom: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
 }
 
 .history-bg {
@@ -2128,6 +2130,10 @@ body._touch .menu__list > li._active .menu__arrow {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     gap: 10px;
+  }
+
+  .history-item__text {
+    padding-right: 0;
   }
 
   .gallery .swiper-pagination {
