@@ -945,13 +945,13 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .no-webp .about{
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(210, 74, 68, 0.6)), to(rgba(239, 148, 143, 0.6))), url("../../img/about-bg.jpg"); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(210, 74, 68, 0.6)), to(rgba(239, 148, 143, 0.6))), url("../img/about-bg.jpg"); }
 
 .no-webp .about{
-  background-image: -o-linear-gradient(top, rgba(210, 74, 68, 0.6), rgba(239, 148, 143, 0.6)), url("../../img/about-bg.jpg"); }
+  background-image: -o-linear-gradient(top, rgba(210, 74, 68, 0.6), rgba(239, 148, 143, 0.6)), url("../img/about-bg.jpg"); }
 
 .no-webp .about{
-  background-image: linear-gradient(to bottom, rgba(210, 74, 68, 0.6), rgba(239, 148, 143, 0.6)), url("../../img/about-bg.jpg"); }
+  background-image: linear-gradient(to bottom, rgba(210, 74, 68, 0.6), rgba(239, 148, 143, 0.6)), url("../img/about-bg.jpg"); }
 
 .about {
   padding-top: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
@@ -2130,6 +2130,10 @@ body._touch .menu__list > li._active .menu__arrow {
     gap: 10px;
   }
 
+  .gallery .swiper-pagination {
+    display: none;
+  }
+
   .company-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2167,8 +2171,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .webp .card:nth-child(4){ background-image: url(../img/4.webp); }
 
-.webp .about{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(210, 74, 68, 0.6)), to(rgba(239, 148, 143, 0.6))), url(../../img/about-bg.webp); }
+.webp .about{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(210, 74, 68, 0.6)), to(rgba(239, 148, 143, 0.6))), url(../img/about-bg.webp); }
 
-.webp .about{ background-image: -o-linear-gradient(top, rgba(210, 74, 68, 0.6), rgba(239, 148, 143, 0.6)), url(../../img/about-bg.webp); }
+.webp .about{ background-image: -o-linear-gradient(top, rgba(210, 74, 68, 0.6), rgba(239, 148, 143, 0.6)), url(../img/about-bg.webp); }
 
-.webp .about{ background-image: linear-gradient(to bottom, rgba(210, 74, 68, 0.6), rgba(239, 148, 143, 0.6)), url(../../img/about-bg.webp); }
+.webp .about{ background-image: linear-gradient(to bottom, rgba(210, 74, 68, 0.6), rgba(239, 148, 143, 0.6)), url(../img/about-bg.webp); }
