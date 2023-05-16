@@ -3,167 +3,19 @@
   background-color: $bgColor;
 }
 
-// .last-new {
-//   position: relative;
-//   display: flex;
-//   border: 1px solid #d6dcdb;
-//   border-radius: 5px;
-//   overflow: hidden;
-//   box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
-//   0 2px 2px rgba(0,0,0,0.1), 
-//   0 4px 4px rgba(0,0,0,0.1), 
-//   0 8px 8px rgba(0,0,0,0.1),
-//   0 16px 16px rgba(0,0,0,0.1);
-
-//   @media (max-width: $mobile) {
-//     flex-direction: column;
-
-//     &:after {
-//       content: '';
-//       display: block;
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       height: 200%;
-//       pointer-events: none;
-//       background-image: linear-gradient(
-//         to bottom,
-//         hsla(0, 0%, 0%, 0) 0%,
-//         hsla(0, 0%, 0%, 0.009) 11.7%,
-//         hsla(0, 0%, 0%, 0.034) 22.1%,
-//         hsla(0, 0%, 0%, 0.072) 31.2%,
-//         hsla(0, 0%, 0%, 0.123) 39.4%,
-//         hsla(0, 0%, 0%, 0.182) 46.6%,
-//         hsla(0, 0%, 0%, 0.249) 53.1%,
-//         hsla(0, 0%, 0%, 0.320) 58.9%,
-//         hsla(0, 0%, 0%, 0.394) 64.3%,
-//         hsla(0, 0%, 0%, 0.468) 69.3%,
-//         hsla(0, 0%, 0%, 0.540) 74.1%,
-//         hsla(0, 0%, 0%, 0.607) 78.8%,
-//         hsla(0, 0%, 0%, 0.668) 83.6%,
-//         hsla(0, 0%, 0%, 0.721) 88.7%,
-//         hsla(0, 0%, 0%, 0.762) 94.1%,
-//         hsla(0, 0%, 0%, 0.790) 100%
-//       );
-//       transform: translateY(-50%);
-//       transition: transform calc(var(--d) * 2) var(--e);
-//     }
-//   }
-
-//   &:hover {
-
-//     img {
-//       transform: translateX(-10px);
-//     }
-
-//     .last-new__content {
-//       transform: translateX(-10px);
-//     }
-
-//     .last-new__btn {
-//       display: block;
-//     }
-//   }
-
-//   // .last-new__img
-//   &__img {
-//     flex: 1 1 50%;
-//     overflow: hidden;
-
-//     img {
-//       aspect-ratio: 6/3;
-//       object-fit: cover;
-//       border-top-left-radius: 5px;
-//       border-bottom-left-radius: 5px;
-//       transition: all ease-in-out .2s;
-//       height: 100%;
-//     }
-//   }
-
-//   // .last-new__content
-//   &__content {
-//     flex: 1 1 50%;
-//     margin: 30px;
-//     position: relative;
-//     transition: all ease-in-out .2s;
-
-//     @media (max-width: $mobile) {
-//       position: absolute;
-//       bottom: 0px;
-//       z-index: 1;
-//     }
-//   }
-
-//   // .last-new__title
-//   &__title {
-//     font-family: $fontSubtitle;
-//     font-weight: 500;
-//     font-size: clamp(1.125rem, 0.966rem + 0.8vw, 1.563rem);
-//     margin-bottom: clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem);
-//     line-height: 130%;
-
-//     @media (max-width: $mobile) {
-//       color: #fff;
-//     }
-//   }
-
-//   // .last-new__text
-//   &__text {
-//     font-size: clamp(0.875rem, 0.852rem + 0.11vw, 0.938rem);
-//     line-height: 130%;
-//     margin-bottom: clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem);
-
-//     @media (max-width: $mobile) {
-//       color: #fff;
-//     }
-//   }
-// }
-// .date {
-//   display: flex;
-//   gap: 5px;
-//   font-size: 12px;
-//   color: grey;
-//   transition: all ease-in-out .2s;
-
-//   @media (max-width: $mobile) {
-//     display: none;
-//   }
-// }
-
-// .last-new__btn {
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-//   margin-top: auto;
-//   color: $brandSubcolor;
-//   font-size: 18px;
-//   transition: all ease .25s;
-//   display: none;
-
-//   @media (max-width: $mobile) {
-//     position: static;
-//     display: block;
-//   }
-// }
-
 $bp-md: 600px;
 $bp-lg: 800px;
 
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
-  // --font-sans: 'Rubik', sans-serif;
-  // --font-serif: 'Cardo', serif;
 }
 
 .page-content {
   display: grid;
   grid-gap: 1rem;
   padding: 1rem 0;
-  // max-width: 1024px;
   margin: 0 auto;
-  // font-family: var(--font-sans);
   
   @media (min-width: 600px) {
     grid-template-columns: repeat(2, 1fr);
@@ -173,8 +25,6 @@ $bp-lg: 800px;
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-
 
 .card {  
   border-radius: 5px;
