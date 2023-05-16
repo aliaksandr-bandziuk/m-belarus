@@ -1408,47 +1408,6 @@ body._touch .menu__list > li._active .menu__arrow {
   margin-top: 70px;
 }
 
-.gallery .content {
-  position: absolute;
-  z-index: 2;
-  left: max(30px, (100% - 1200px) / 2);
-  top: 50%;
-  -webkit-transform: translatey(-50%);
-      -ms-transform: translatey(-50%);
-          transform: translatey(-50%);
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: 0.175rem;
-  max-width: 800px;
-}
-
-.gallery .content span {
-  font-size: clamp(1.85rem, 1.7053rem + 0.5447vw, 2.25rem);
-  font-weight: 300;
-  display: block;
-  margin-bottom: -0.625rem;
-}
-
-.gallery .content .main-heading {
-  font-size: clamp(2.5rem, 1.591rem + 4.55vw, 5rem);
-  font-weight: 400;
-}
-
-.gallery .content p {
-  font-size: clamp(1.2rem, 1.0191rem + 0.6809vw, 1.7rem);
-  margin-top: -0.313rem;
-}
-
-.gallery .content hr {
-  display: block;
-  width: 3rem;
-  border: none;
-  height: 0.125rem;
-  background: #fff;
-  margin-top: 0.938rem;
-  margin-inline: 0.313rem;
-}
-
 .gallery-slider {
   width: 100%;
   height: 100%;
@@ -1480,6 +1439,47 @@ body._touch .menu__list > li._active .menu__arrow {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.gallery-slider .swiper-slide .content {
+  position: absolute;
+  z-index: 2;
+  left: max(30px, (100% - 1200px) / 2);
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+      -ms-transform: translatey(-50%);
+          transform: translatey(-50%);
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.175rem;
+  max-width: 800px;
+}
+
+.gallery-slider .swiper-slide .content span {
+  font-size: clamp(1.85rem, 1.7053rem + 0.5447vw, 2.25rem);
+  font-weight: 300;
+  display: block;
+  margin-bottom: -0.625rem;
+}
+
+.gallery-slider .swiper-slide .content .main-heading {
+  font-size: clamp(2.5rem, 1.591rem + 4.55vw, 5rem);
+  font-weight: 400;
+}
+
+.gallery-slider .swiper-slide .content p {
+  font-size: clamp(1.2rem, 1.0191rem + 0.6809vw, 1.7rem);
+  margin-top: -0.313rem;
+}
+
+.gallery-slider .swiper-slide .content hr {
+  display: block;
+  width: 3rem;
+  border: none;
+  height: 0.125rem;
+  background: #fff;
+  margin-top: 0.938rem;
+  margin-inline: 0.313rem;
 }
 
 .gallery .swiper-pagination {
@@ -1656,11 +1656,11 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (min-width: 42.5rem) {
-  .gallery .content span {
+  .gallery-slider .swiper-slide .content span {
     margin-bottom: -1.875rem;
   }
 
-  .gallery .content p {
+  .gallery-slider .swiper-slide .content p {
     margin-top: -1.563rem;
   }
 }
