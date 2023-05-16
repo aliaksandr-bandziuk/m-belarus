@@ -347,6 +347,7 @@
     });
     slider.controller.control = thumbs;
     thumbs.controller.control = slider;
+    AOS.init();
     window["FLS"] = true;
     isWebp();
     tabs();
